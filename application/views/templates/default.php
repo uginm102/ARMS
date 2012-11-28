@@ -8,62 +8,40 @@
     <body>
         <div class="page">
             <div class="header">
+                        <div class="projectTitle" >
+                            <h1>
+                                <span>ARMS</span>
+                            </h1>
+                       </div>
+                        <div id="minName" class="minName">
+                            <h2>
+                                <span>Arcademic Records Management System</span>
+                            </h2>
+                        </div>
+                        <div class="usernameAccount" >
+                            <asp:LinkButton ID="lbtnMyAccount" runat="server">
+                                <asp:Label ID="lblUsername" runat="server" Text="Unknown user"></asp:Label> | My Account
+                            </asp:LinkButton>
+                        </div>
+                        <div class="logout" >
+                            <asp:LoginStatus ID="loginStatus" runat="server" />
+                        </div>
             </div>
             <div class="menu">
                 <ul id="nav">
-                    <li class="current"><a href="http://www.webdesignerwall.com">Home</a></li>
-                    <li><a href="http://www.ndesign-studio.com">My Projects</a>
-                        <ul>
-                            <li><a href="http://www.ndesign-studio.com">N.Design Studio</a>
-                                <ul>
-                                    <li><a href="http://www.ndesign-studio.com/portfolio">Portfolio</a></li>
-                                    <li><a href="http://www.ndesign-studio.com/wp-themes">WordPress Themes</a></li>
-                                    <li><a href="http://www.ndesign-studio.com/wallpapers">Wallpapers</a></li>
-                                    <li><a href="http://www.ndesign-studio.com/tutorials">Illustrator Tutorials</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="http://www.webdesignerwall.com">Web Designer Wall</a>
-                                <ul>
-                                    <li><a href="http://jobs.webdesignerwall.com">Design Job Wall</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="http://icondock.com">IconDock</a></li>
-                            <li><a href="http://bestwebgallery.com">Best Web Gallery</a></li>
-                        </ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li>
+                        <?php echo anchor('marks/listMarks', 'Marks'); ?>
                     </li>
-                    <li><a href="#">Multi-Levels</a>
-                        <ul>
-                            <li><a href="#">Team</a>
-                                <ul>
-                                    <li><a href="#">Sub-Level Item</a></li>
-                                    <li><a href="#">Sub-Level Item</a>
-                                        <ul>
-                                            <li><a href="#">Sub-Level Item</a></li>
-                                            <li><a href="#">Sub-Level Item</a></li>
-                                            <li><a href="#">Sub-Level Item</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li><a href="#">Sub-Level Item</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Sales</a></li>
-                            <li><a href="#">Another Link</a></li>
-                            <li><a href="#">Department</a>
-                                <ul>
-                                    <li><a href="#">Sub-Level Item</a></li>
-                                    <li><a href="#">Sub-Level Item</a></li>
-                                    <li><a href="#">Sub-Level Item</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>	
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
+            <h3><?php echo $action; ?></h3>
+            <?php echo anchor('marks/add', 'New Marks'); ?>
+            <form action="<?php echo base_url(); ?>index.php/marks/search" method="post"><input type="text" name="q"></input><input type="submit"></input></form>
             <div class="content">
-            <h1>Default template</h1>
+            
                 <?php echo $body; ?>
             </div>
             <div class="footer">

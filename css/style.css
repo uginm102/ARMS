@@ -1,8 +1,8 @@
 body {
 	font: normal .8em/1.5em Arial, Helvetica, sans-serif;
 	background: #ebebeb;
-	width: 900px;
-	margin: 100px auto;
+	width: 1000px;
+	margin: 10px auto;
 	color: #666;
 }
 
@@ -21,6 +21,7 @@ a {
 
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+        margin-left: 6em;
 }
 #nav li {
 	margin: 0 5px;
@@ -160,3 +161,78 @@ html[xmlns] #nav {
 * html #nav {
 	height: 1%;
 }
+
+.clear{ clear: both; }
+
+.page{ height:auto; width:1000px; margin:0 auto;}
+.header{height:100px;}
+.menu{ height:45px; margin-top:0px; padding-top:2px; padding-bottom:2px; }
+.projectTitle{ width: auto; height:auto; margin-top: 20px; margin-left:10px; margin-bottom:1px;}
+.minName { width: auto; height:auto; margin-top: 1px; margin-left:10px; }
+.projectTitle h1, .minName h2
+{
+    color:#258CD5;
+    font-family: Arial, sans-serif;
+}
+.projectTitle h1
+{
+    font-size: 55px;
+    text-align: left;
+    top: 5px;
+    width: auto;
+}
+.minName h2
+{
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: left;
+    top: 2px;
+    width: auto;
+}
+.usernameAccount
+{
+    background-color:Aqua;
+    width: auto; 
+    height:auto;
+    -moz-border-radius:10px;  
+    border-radius: 10px;  
+    -webkit-border-radius: 8px;
+    padding-bottom: 5px;
+    padding-right:5px;
+    padding-top:30px;
+    margin-top:-35px;
+    margin-right:70px;
+    text-align:right;
+    float:right;
+}
+.logout
+{
+    background-color:Aqua;
+    width: 60px; 
+    height:auto;
+    -moz-border-radius:10px;  
+    border-radius: 10px;  
+    -webkit-border-radius: 8px;
+    padding-bottom: 5px;
+    padding-top:30px;
+    margin-top:-35px;
+    margin-left:2px;
+    padding-left:5px;
+    text-align:left;
+    float:right;
+}
+.content{ height:100px; width:inherit; }
+fieldset {
+  -moz-border-radius:5px;  
+  border-radius: 5px;  
+  -webkit-border-radius: 5px;
+  height:270px;
+}
+
+.contentColOne{ width: 250px; height: auto; float: left; }
+.contentColTwo{ width: 710px; height: auto; float: left; }
+.contentColThree{ width: 240px; height: auto; float: left; }
+.footer {margin-top:5px; width:inherit; height:100px; background-image: url("../images/footer.png");}
+.footerColOne{ width: 30%; height: auto; float: left; }
+.footerColTwo{ width: 50%; height: auto; float: left; }
+.footerColThree{ width: 20%; height: auto; float: left; }
